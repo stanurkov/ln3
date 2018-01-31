@@ -1,10 +1,10 @@
 {
   "name": "ln3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JS ultra-simple Internationalization Helper",
   "homepage": "https://github.com/stanurkov/ln3",
   "main": "index.js",
-  "repository" : "github:stanurkov/ln3",
+  "repository": "github:stanurkov/ln3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
