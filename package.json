@@ -3,10 +3,11 @@
   "version": "0.0.3",
   "description": "JS ultra-simple Internationalization Helper",
   "homepage": "https://github.com/stanurkov/ln3",
-  "main": "index.js",
   "repository": "github:stanurkov/ln3",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel index.js --out-dir dist"
   },
   "keywords": [
     "ln3",
@@ -16,9 +17,25 @@
     "text",
     "format"
   ],
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
   "author": "Stefan Tanurkov",
   "license": "MIT",
   "dependencies": {
     "intl-messageformat": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0"
   }
 }
